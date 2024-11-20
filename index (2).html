@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="dark">
+    <head>
+				<script language="JavaScript">var msg="Nghiêm cấm hành vi copy source code Nam Dev ,Yêu cầu tôn trọng chủ Web";function disableIE(){if(document.all)return alert(msg),!1}function disableNS(e){if((document.layers||document.getElementById&&!document.all)&&(2==e.which||3==e.which))return alert(msg),!1}document.layers?(document.captureEvents(Event.MOUSEDOWN),document.onmousedown=disableNS):(document.onmouseup=disableNS,document.oncontextmenu=disableIE),document.oncontextmenu=new Function("alert(msg);return false"),shortcut={all_shortcuts:{},add:function(m,g,w){var e={type:"keydown",propagate:!1,disable_in_input:!1,target:document,keycode:!1};if(w)for(var t in e)void 0===w[t]&&(w[t]=e[t]);else w=e;e=w.target,"string"==typeof w.target&&(e=document.getElementById(w.target)),m=m.toLowerCase(),t=function(e){var t;if((e=e||window.event,w.disable_in_input)&&(e.target?t=e.target:e.srcElement&&(t=e.srcElement),3==t.nodeType&&(t=t.parentNode),"INPUT"==t.tagName||"TEXTAREA"==t.tagName))return;e.keyCode?code=e.keyCode:e.which&&(code=e.which),t=String.fromCharCode(code).toLowerCase(),188==code&&(t=","),190==code&&(t=".");var o=m.split("+"),n=0,a={"`":"~",1:"!",2:"@",3:"#",4:"$",5:"%",6:"^",7:"&",8:"*",9:"(",0:")","-":"_","=":"+",";":":","'":'"',",":"<",".":">","/":"?","\\":"|"},c={esc:27,escape:27,tab:9,space:32,return:13,enter:13,backspace:8,scrolllock:145,scroll_lock:145,scroll:145,capslock:20,caps_lock:20,caps:20,numlock:144,num_lock:144,num:144,pause:19,break:19,insert:45,home:36,delete:46,end:35,pageup:33,page_up:33,pu:33,pagedown:34,page_down:34,pd:34,left:37,up:38,right:39,down:40,f1:112,f2:113,f3:114,f4:115,f5:116,f6:117,f7:118,f8:119,f9:120,f10:121,f11:122,f12:123},r=!1,l=!1,d=!1,i=!1,s=!1,p=!1,u=!1,f=!1;e.ctrlKey&&(i=!0),e.shiftKey&&(l=!0),e.altKey&&(p=!0),e.metaKey&&(f=!0);for(var h=0;k=o[h],h<o.length;h++)"ctrl"==k||"control"==k?(n++,d=!0):"shift"==k?(n++,r=!0):"alt"==k?(n++,s=!0):"meta"==k?(n++,u=!0):1<k.length?c[k]==code&&n++:w.keycode?w.keycode==code&&n++:t==k?n++:a[t]&&e.shiftKey&&((t=a[t])==k&&n++);if(n==o.length&&i==d&&l==r&&p==s&&f==u&&(g(e),!w.propagate))return e.cancelBubble=!0,e.returnValue=!1,e.stopPropagation&&(e.stopPropagation(),e.preventDefault()),!1},this.all_shortcuts[m]={callback:t,target:e,event:w.type},e.addEventListener?e.addEventListener(w.type,t,!1):e.attachEvent?e.attachEvent("on"+w.type,t):e["on"+w.type]=t},remove:function(e){e=e.toLowerCase();var t=this.all_shortcuts[e];if(delete this.all_shortcuts[e],t){e=t.event;var
+o=t.target;t=t.callback;o.detachEvent?o.detachEvent("on"+e,t):o.removeEventListener?o.removeEventListener(e,t,!1):o["on"+e]=!1}}},shortcut.add("Ctrl+U",function(){top.location.href="https://www.facebook.com/WusNamDev"}),shortcut.add("F12",function(){top.location.href="https://www.facebook.com/WusNamDev"}),shortcut.add("Ctrl+Shift+I",function(){top.location.href="https://www.facebook.com/WusNamDev"}),shortcut.add("Ctrl+S",function(){top.location.href="https://www.facebook.com/WusNamDev"}),shortcut.add("Ctrl+Shift+C",function(){top.location.href="https://www.facebook.com/WusNamDev"})
+</script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A conversational ChatGPT that listens, learns, and challenges">
+        <meta property="og:title" content="ChatGPT light">
+        <meta property="og:image" content="https://www.google.com.vn/url?sa=i&url=https%3A%2F%2Fpasgo.vn%2Ftin-tuc%2Fchatgpt-la-gi-nen-tang-ai-dot-pha-va-thong-minh-95&psig=AOvVaw2iRALoeatuuAFofJXmpTgi&ust=1702476387603000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjb5faIioMDFQAAAAAdAAAAABAD">
+        <meta property="og:description" content="A conversational ChatGPT that listens, learns, and challenges">
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta property="og:url" content="https://namdev.namphamvs.repl.co/">
+        <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/style1.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+        <link rel="manifest" href="https://lehoangphuc.site/assets/img/site.webmanifest">
+        <script src="assets/js/icons.js"></script>
+        <script src="assets/js/laguage.js"></script>
+	<script src="assets/js/config.js" defer></script>
+        <script src="assets/js/chat.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/markdown-it@latest/dist/markdown-it.min.js"></script>
+        <script>const user_image = `<img src="assets/img/namdev.png" alt="User Avatar">`;
+                const gpt_image = `<img src="assets/img/apple-touch-icon.png" alt="GPT Avatar">`;</script>
+		<script src="assets/js/highlight.min.js"></script>
+        <script src="assets/js/highlightjs-copy.min.js.js"></script>
+        <script>window.conversation_id = Array.from(crypto.getRandomValues(new Uint8Array(8))).map(n => n.toString(24).padStart(4, '0')).join('-');</script>
+        <title>ChatGPT</title>
+    </head>
+    <body>
+    	
+        <div class="gradient"></div>
+        <div class="row">
+            <div class="box conversations">
+                <div class="top">
+                    <button class="new_convo" onclick="new_conversation()">
+                        <i class="fa-regular fa-plus"></i>
+                        <span>New chat</span>
+                    </button>
+                    <div class="spinner"></div>
+                </div>
+                <div class="bottom_buttons">
+                    <button onclick="delete_conversations()">
+                        <i class="fa-regular fa-trash"></i>
+                        <span>Clean chat</span>
+                    </button>
+                    
+                    <div class="info">
+                        <i class="fa-regular fa-circle-info"></i>
+                        <span class="convo-title">Creater Website By: @<a href="https://www.facebook.com/WusNamDev">NamDev.com</a><br>
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="conversation">
+                <div class="stop_generating stop_generating-hidden">
+                      <button id="cancelButton" onclick="stopAnswer()">
+                        <span>Stop</span>
+                        <i class="fa-regular fa-stop"></i>
+                    </button>
+                </div>
+                
+                <div class="box" id="messages">
+                	
+                </div>
+                
+                <div class="user-input">
+                    <div class="box input-box">
+                        <textarea id="message-input" placeholder="Ask me anything..." style="white-space: pre-line;"></textarea>
+                        <div id="send-button">
+                            <i class="fa-regular fa-paper-plane-top"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                     <div class="field">
+                        <select name="model" id="model">
+			    <option value="gpt-3.5-turbo-16k">Model</option>
+                            <option value="gpt-3.5-turbo">gpt-3.5-turbo</option>
+                            <option value="gpt-3.5-turbo-0301">gpt-3.5-turbo-0301</option>
+                            <option value="gpt-3.5-turbo-0613">gpt-3.5-turbo-0613</option>
+                            <option value="gpt-3.5-turbo-16k">gpt-3.5-turbo-16k</option>
+			    <option value="gpt-4">gpt-4</option>         
+                            <option value="gpt-4-0314">gpt-4-0314</option>
+			    <option value="gpt-4-32k">gpt-4-32k</option>
+			    <option value="gpt-4-32k-0314">gpt-4-32k-0314</option>
+                        </select>
+                        </div>
+			<div class="field">
+			<select name="temperature" id="temperature">
+			<option value="0.5">T&deg;</option>
+                            <option value="0.0">0.0</option>
+                            <option value="0.1">0.1</option>
+                            <option value="0.2">0.2</option>
+                            <option value="0.3">0.3</option>
+                            <option value="0.4">0.4</option>
+                            <option value="0.5">0.5</option>
+                            <option value="0.6">0.6</option>
+                            <option value="0.7">0.7</option>
+                            <option value="0.8">0.8</option>
+                            <option value="0.9">0.9</option>
+                            <option value="1.0">1.0</option>
+			    <option value="1.1">1.1</option>
+			    <option value="1.2">1.2</option>
+			    <option value="1.3">1.3</option>
+			    <option value="1.4">1.4</option>
+			    <option value="1.5">1.5</option>
+                        </select>
+		      </div>
+                    <div class="field" style="margin-left:15px;">
+                    <label for="toggle-switch" style="justify-content: center;">
+                    <input type="checkbox" id="toggle-switch" name="toggle-switch" onclick="toggleTheme()" style="display: none;">
+                    <i class="fas fa-sun-bright fa-xl" style="color:orange;" id="sun-icon"></i>
+                    <i class="fas fa-moon fa-xl" style="color:lightgray;" id="moon-icon"></i>
+                    </label>
+                   </div>
+                </div>
+            </div>
+        </div> 
+        <div class="mobile-sidebar">
+            <i class="fa-solid fa-bars"></i>
+           <body>
+      <body>
+  <script>
+
+    
+   
+ var stop, staticx;
+var img = new Image();
+img.src = "https://i.imgur.com/R9XUjfF.png";
+
+			function Sakura(x, y, s, r, fn) {
+				this.x = x;
+				this.y = y;
+				this.s = s;
+				this.r = r;
+				this.fn = fn;
+			}
+
+			Sakura.prototype.draw = function(cxt) {
+				cxt.save();
+				var xc = 40 * this.s / 4;
+				cxt.translate(this.x, this.y);
+				cxt.rotate(this.r);
+				cxt.drawImage(img, 0, 0, 40 * this.s, 40 * this.s)
+				cxt.restore();
+			}
+
+			Sakura.prototype.update = function() {
+				this.x = this.fn.x(this.x, this.y);
+				this.y = this.fn.y(this.y, this.y);
+				this.r = this.fn.r(this.r);
+				if(this.x > window.innerWidth ||
+					this.x < 0 ||
+					this.y > window.innerHeight ||
+					this.y < 0
+				) {
+					this.r = getRandom('fnr');
+					if(Math.random() > 0.4) {
+						this.x = getRandom('x');
+						this.y = 0;
+						this.s = getRandom('s');
+						this.r = getRandom('r');
+					} else {
+						this.x = window.innerWidth;
+						this.y = getRandom('y');
+						this.s = getRandom('s');
+						this.r = getRandom('r');
+					}
+				}
+			}
+
+			SakuraList = function() {
+				this.list = [];
+			}
+			SakuraList.prototype.push = function(sakura) {
+				this.list.push(sakura);
+			}
+			SakuraList.prototype.update = function() {
+				for(var i = 0, len = this.list.length; i < len; i++) {
+					this.list[i].update();
+				}
+			}
+			SakuraList.prototype.draw = function(cxt) {
+				for(var i = 0, len = this.list.length; i < len; i++) {
+					this.list[i].draw(cxt);
+				}
+			}
+			SakuraList.prototype.get = function(i) {
+				return this.list[i];
+			}
+			SakuraList.prototype.size = function() {
+				return this.list.length;
+			}
+
+			function getRandom(option) {
+				var ret, random;
+				switch(option) {
+					case 'x':
+						ret = Math.random() * window.innerWidth;
+						break;
+					case 'y':
+						ret = Math.random() * window.innerHeight;
+						break;
+					case 's':
+						ret = Math.random();
+						break;
+					case 'r':
+						ret = Math.random() * 5;
+						break;
+					case 'fnx':
+						random = -0.5 + Math.random() * 1;
+						ret = function(x, y) {
+							return x + 0.5 * random - 1;
+						};
+						break;
+					case 'fny':
+						random = 0.5 + Math.random() * 0.5
+						ret = function(x, y) {
+							return y + random;
+						};
+						break;
+					case 'fnr':
+						random = Math.random() * 0.01;
+						ret = function(r) {
+							return r + random;
+						};
+						break;
+				}
+				return ret;
+			}
+
+			function startSakura() {
+
+				requestAnimationFrame = window.requestAnimationFrame ||
+					window.mozRequestAnimationFrame ||
+					window.webkitRequestAnimationFrame ||
+					window.msRequestAnimationFrame ||
+					window.oRequestAnimationFrame;
+				var canvas = document.createElement('canvas'),
+					cxt;
+				staticx = true;
+				canvas.height = window.innerHeight;
+				canvas.width = window.innerWidth;
+				canvas.setAttribute('style', 'position: fixed;left: 0;top: 0;pointer-events: none;');
+				canvas.setAttribute('id', 'canvas_sakura');
+				document.getElementsByTagName('body')[0].appendChild(canvas);
+				cxt = canvas.getContext('2d');
+				var sakuraList = new SakuraList();
+				for(var i = 0; i < 50; i++) {
+					var sakura, randomX, randomY, randomS, randomR, randomFnx, randomFny;
+					randomX = getRandom('x');
+					randomY = getRandom('y');
+					randomR = getRandom('r');
+					randomS = getRandom('s');
+					randomFnx = getRandom('fnx');
+					randomFny = getRandom('fny');
+					randomFnR = getRandom('fnr');
+					sakura = new Sakura(randomX, randomY, randomS, randomR, {
+						x: randomFnx,
+						y: randomFny,
+						r: randomFnR
+					});
+					sakura.draw(cxt);
+					sakuraList.push(sakura);
+				}
+				stop = requestAnimationFrame(function() {
+					cxt.clearRect(0, 0, canvas.width, canvas.height);
+					sakuraList.update();
+					sakuraList.draw(cxt);
+					stop = requestAnimationFrame(arguments.callee);
+				})
+			}
+
+			window.onresize = function() {
+				var canvasSnow = document.getElementById('canvas_snow');
+				canvasSnow.width = window.innerWidth;
+				canvasSnow.height = window.innerHeight;
+			}
+
+			img.onload = function() {
+				startSakura();
+			}
+
+			function stopp() {
+				if(staticx) {
+					var child = document.getElementById("canvas_sakura");
+					child.parentNode.removeChild(child);
+					window.cancelAnimationFrame(stop);
+					staticx = false;
+				} else {
+					startSakura();
+				}
+			}
+		
+
+
+ </script>
+ 
+<script>(function(){var js = "window['__CF$cv$params']={r:'833de346eed40506',t:'MTcwMjI5OTM4OC4wNjQwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+
+ </script>
+        </div>
+        <script src="assets/js/theme-custom.js"></script>
+    </body>
+</html>
